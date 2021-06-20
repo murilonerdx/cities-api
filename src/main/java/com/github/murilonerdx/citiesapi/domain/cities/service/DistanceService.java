@@ -1,15 +1,18 @@
 package com.github.murilonerdx.citiesapi.domain.cities.service;
 
 
-import com.github.andrelugomes.cities.entities.City;
-import com.github.andrelugomes.cities.repositories.CityRepository;
-import com.github.andrelugomes.utils.StringLocationUtils;
 import java.util.Arrays;
 import java.util.List;
+
+import com.github.murilonerdx.citiesapi.domain.cities.entities.City;
+import com.github.murilonerdx.citiesapi.domain.cities.repositories.CityRepository;
+import com.github.murilonerdx.citiesapi.domain.utils.StringLocationUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.geo.Point;
 import org.springframework.stereotype.Service;
+
+import static java.lang.Math.*;
 
 @Service
 public class DistanceService {
