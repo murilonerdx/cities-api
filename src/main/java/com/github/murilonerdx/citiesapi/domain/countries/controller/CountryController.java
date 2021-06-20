@@ -3,6 +3,7 @@ package com.github.murilonerdx.citiesapi.domain.countries.controller;
 import com.github.murilonerdx.citiesapi.domain.countries.entity.Country;
 import com.github.murilonerdx.citiesapi.domain.countries.repository.CountryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,7 +21,7 @@ public class CountryController {
     }
 
     @GetMapping("/countries")
-    public List<Country> cities() {
+    public List<Country> countries() {
         return repository.findAll();
     }
 }
